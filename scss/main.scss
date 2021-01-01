@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 @import 'base/root';
 @import 'base/reset';
 @import 'utils';
@@ -14,5 +14,32 @@
     &__content{
         @extend .fs-500;
         @extend .color-neutral--100;
+    }
+}
+
+.review{
+    @extend .fs-400;
+    @extend .padding-y-1;
+    @extend .margin-x-1;
+    @extend .text-align-center;
+    @extend .bg-neutral--200;
+    @extend .space-y-1;
+    @extend .flex;
+    @extend .column;
+    @extend .items-center;
+    @extend .br-1;
+    &__rating{
+        @extend .space-x-1;
+        &-star{
+            @extend .inline-block;
+            @extend .w-3;
+            @extend .h-3;
+            @extend .bg-repeat-no;
+            @extend .bg-position-center;
+            @extend .bg-size-cover;
+            @extend .fw-700;
+            background-image: url(/assets/images/icon-star.svg);
+            
+        }
     }
 }
