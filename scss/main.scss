@@ -1,3 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 @import 'base/root';
 @import 'base/reset';
+@import 'utils';
+.description{
+    @extend .text-align-center;
+    @extend .space-y-2;
+    &__title{
+        @extend .fs-900;
+        @extend .fw-700;
+        @extend .line-height--300;
+        @extend .color-primary--700;
+    }
+    &__content{
+        @extend .fs-500;
+        @extend .color-neutral--100;
+    }
+}
