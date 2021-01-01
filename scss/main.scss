@@ -20,7 +20,6 @@
 .review{
     @extend .fs-400;
     @extend .padding-y-1;
-    @extend .margin-x-1;
     @extend .text-align-center;
     @extend .bg-neutral--200;
     @extend .space-y-1;
@@ -28,6 +27,7 @@
     @extend .column;
     @extend .items-center;
     @extend .br-1;
+    @extend .fw-700;
     &__rating{
         @extend .space-x-1;
         &-star{
@@ -37,9 +37,42 @@
             @extend .bg-repeat-no;
             @extend .bg-position-center;
             @extend .bg-size-cover;
-            @extend .fw-700;
             background-image: url(/assets/images/icon-star.svg);
             
         }
+    }
+}
+
+.testimonial{
+    @extend .fs-400;
+    @extend .padding-y-3;
+    @extend .padding-x-3;
+    @extend .br-1;
+    @extend .bg-primary--700;
+    @extend .space-y-3;
+    @extend .color-neutral--300;
+    max-width: 22.5rem;
+
+    &__header{
+        @extend .flex;
+        @extend .row;
+        @extend .space-x-2;
+        @extend .items-center;
+    }
+    &__avatar{
+        @extend .br-max;
+        @extend .bg-repeat-no;
+        
+        @extend .bg-position-center;
+        @extend .bg-size-cover;
+        @extend .w-5;
+        @extend .h-5;
+        
+    }
+    &__name{
+        @extend .fw-700;
+    }
+    &__property{
+        @extend .color-primary--400;
     }
 }
