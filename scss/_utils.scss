@@ -55,3 +55,17 @@
         text-align: center;
     }
 }
+
+.space{
+    &-y{
+        &-1 > :not(:last-child){
+            margin-bottom: 0.5rem;
+        }
+        &-2 > :not(:last-child){
+            margin-bottom: 1rem;
+        }
+        &-3 > :not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+}
