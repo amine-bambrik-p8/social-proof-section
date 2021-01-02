@@ -12,33 +12,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="[ ] [ ff-primary ]">
-    <main class="[ space-y-3 ] [ padding-x-2  padding-y-5 ]">
-        <section class=" [ description ]">
-            <h1 class=" [ description__title ]">
-                10,000+ of our users love our products.
-            </h1>
-            <p class=" [ description__content ]">
-                We only provide great products combined with excellent customer service.
-                See what our satisfied customers are saying about our services.
-            </p>
-        </section>
-        <section class=" [ reviews ]">
-            <div class=" [ review ]">
-                <div class="[ review__rating ]">
-                    <div class="[ review__rating-star ]"></div>
-                    <div class="[ review__rating-star ]"></div>
-                    <div class="[ review__rating-star ]"></div>
-                    <div class="[ review__rating-star ]"></div>
-                    <div class="[ review__rating-star ]"></div>
+<body class="[ ] [ ff-primary flex content-center items-center ]">
+    <main class="[ container ] [  space-y-3 padding-x-2  padding-y-5 ]">
+        <section class="[ ] [ space-y-3 ] [ lg:content-space-between lg:flex lg:row ]">
+            <article class=" [ description ]">
+                <h1 class=" [ description__title ]">
+                    10,000+ of our users love our products.
+                </h1>
+                <p class=" [ description__content ]">
+                    We only provide great products combined with excellent customer service.
+                    See what our satisfied customers are saying about our services.
+                </p>
+            </article>
+            <article class="[ reviews ] [ flex column items-center lg:items-start ]">
+                <div class=" [ review ] [  ]">
+                    <div class="[ review__rating ]">
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                    </div>
+                    <span class="[ review__title ]">
+                        Rated 5 Stars in Reviews
+                    </span>
                 </div>
-                <span class="[ review__title ]">
-                    Rated 5 Stars in Reviews
-                </span>
-            </div>
+                <div class=" [ review ] [ lg:margin-l-8 ]">
+                    <div class="[ review__rating ]">
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                    </div>
+                    <span class="[ review__title ]">
+                        Rated 5 Stars in Reviews
+                    </span>
+                </div>
+                <div class=" [ review ] [ lg:margin-l-16 ]">
+                    <div class="[ review__rating ]">
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                        <div class="[ review__rating-star ]"></div>
+                    </div>
+                    <span class="[ review__title ]">
+                        Rated 5 Stars in Reviews
+                    </span>
+                </div>
+            </article>
         </section>
-        <section>
-            <article class="[ testimonial ]">
+        <section class="[ testimonials ] [ items-center lg:content-space-between flex column lg:row lg:items-start lg:space-x-2 space-y-2 ]">
+            <article class="[ testimonial ] ">
                 <div class="[ testimonial__header ]" >
                     <div style="background-image: url(/assets/images/image-colton.jpg);" class="[ testimonial__avatar ]"></div>
                     <div class="[ ] [ flex column ]">
@@ -54,6 +80,42 @@
                     We needed the same printed design as the one we had ordered a week prior.
                     Not only did they find the original order, but we also received it in time.
                     Excellent!
+                </q>
+
+            </article>
+            <article class="[ testimonial ] [ lg:margin-t-2 ]">
+                <div class="[ testimonial__header ]" >
+                    <div style="background-image: url(/assets/images/image-anne.jpg);" class="[ testimonial__avatar ]"></div>
+                    <div class="[ ] [ flex column ]">
+                        <span class="[ testimonial__name ]">
+                            Anne Wallace 
+                        </span>
+                        <span class="[ testimonial__property ]">
+                            Verified Buyer                    
+                        </span>
+                    </div>
+                </div>
+                <q class="[ testimonial__content ]">
+                    Put an order with this company and can only praise them for the very high
+                    standard. Will definitely use them again and recommend them to everyone!
+                </q>
+
+            </article>
+            <article class="[ testimonial ] [ lg:margin-t-4 ]">
+                <div class="[ testimonial__header ]" >
+                    <div style="background-image: url(/assets/images/image-irene.jpg);" class="[ testimonial__avatar ]"></div>
+                    <div class="[ ] [ flex column ]">
+                        <span class="[ testimonial__name ]">
+                            Irene Roberts 
+                        </span>
+                        <span class="[ testimonial__property ]">
+                            Verified Buyer                 
+                        </span>
+                    </div>
+                </div>
+                <q class="[ testimonial__content ]">
+                Customer service is always excellent and very quick turn around. Completely
+                delighted with the simplicity of the purchase and the speed of delivery.
                 </q>
 
             </article>
