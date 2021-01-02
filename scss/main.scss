@@ -2,29 +2,53 @@
 @import 'base/root';
 @import 'base/reset';
 @import 'utils';
+body{
+    background-image: url(/assets/images/bg-pattern-bottom-desktop.svg),url(/assets/images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right,top left;
+    @media screen and (min-width:600){
+        background-image: url(/assets//images/bg-pattern-bottom-mobile.svg),url(/assets//images/bg-pattern-top-mobile.svg);
+    }
+}
+.container{
+    max-width: 1327px;
+    @extend .flex;
+    @extend .column;
+}
 .description{
     @extend .text-align-center;
+    @extend .lg\:text-align-start;
     @extend .space-y-2;
+    @extend .flex;
+    @extend .column;
+    @extend .items-center;
+    @extend .lg\:items-start;
+
     &__title{
         @extend .fs-900;
         @extend .fw-700;
         @extend .line-height--300;
         @extend .color-primary--700;
+        max-width: 14ch;
     }
     &__content{
         @extend .fs-500;
         @extend .color-neutral--100;
+        max-width: 36ch;
     }
 }
 
 .review{
     @extend .fs-400;
     @extend .padding-y-1;
+    @extend .padding-x-3;
     @extend .text-align-center;
     @extend .bg-neutral--200;
     @extend .space-y-1;
     @extend .flex;
     @extend .column;
+    @extend .lg\:row;
+    @extend .lg\:space-x-3;
     @extend .items-center;
     @extend .br-1;
     @extend .fw-700;
